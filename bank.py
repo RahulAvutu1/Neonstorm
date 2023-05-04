@@ -42,7 +42,7 @@ class Bank:
       print("Please input the valid input")
  def person1(self):
     while True:
-      print("If you want to deposit the money type d or if you want to withdraw type w")
+      print("If you want to deposit the money type 'd' or if you want to withdraw type 'w'")
       try:
        choice=input()
        if choice =='d' or choice =='w':
@@ -95,7 +95,7 @@ class Bank:
             print("Please enter a valid input")
             continue
     while True:
-      print("If you want to deposit the money type d or if you want to withdraw type w")
+      print("If you want to deposit the money type 'd' or if you want to withdraw type 'w'")
       try:
        choice=input()
        if choice=='d' or choice=='w':
@@ -134,7 +134,7 @@ class Bank:
          print(self.rema)
          break
     while True:
-      print("If you want to deposit the money type d or if you want to withdraw type w")
+      print("If you want to deposit the money type 'd' or if you want to withdraw type 'w'")
       try:
        choice=input()
        if choice=='d' or choice=='w':
