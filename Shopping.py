@@ -65,7 +65,7 @@ class Electronics(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin : ")
                             rand1=r.randint(1,6)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -84,7 +84,7 @@ class Electronics(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin  : ")
                             rand1=r.randint(1,8)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -103,7 +103,7 @@ class Electronics(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin  : ")
                             rand1=r.randint(1,10)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -151,7 +151,7 @@ class Cosmetics(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin  : ")
                             rand1=r.randint(1,6)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -170,7 +170,7 @@ class Cosmetics(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin : ")
                             rand1=r.randint(1,10)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -218,7 +218,7 @@ class Sports(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin : ")
                             rand1=r.randint(1,6)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -237,7 +237,7 @@ class Sports(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin : ")
                             rand1=r.randint(1,8)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -256,7 +256,7 @@ class Sports(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin : ")
                             rand1=r.randint(1,10)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -305,7 +305,7 @@ class Food(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin : ")
                             rand1=r.randint(1,6)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -324,7 +324,7 @@ class Food(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin : ")
                             rand1=r.randint(1,8)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -343,7 +343,7 @@ class Food(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin : ")
                             rand1=r.randint(1,10)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -391,7 +391,7 @@ class Furniture(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin : ")
                             rand1=r.randint(1,6)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -410,7 +410,7 @@ class Furniture(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin : ")
                             rand1=r.randint(1,8)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -429,7 +429,7 @@ class Furniture(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin : ")
                             rand1=r.randint(1,12)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -438,14 +438,15 @@ class Furniture(Shop):
                         print("The item had added to your cart")
                         self.cart=self.name
                         print(f"The item which was added is {self.cart}")
-class Medics(Shop):
+class Clothes(Shop):
        def __init__(self):
          super(). __init__()
-       def Med(self):
-                      print("Enter the name of the Medics : ")
+       def Clot(self):
+                      print("Enter the brand of the cloth : ")
                       self.name=input()
-                      self.pra=input("Enter the type of Medic : ")
-                      print("If you want to buy the product please enter 'b' or if you want to add to your cart enter 'c'")
+                      self.cr=input("Please enter the gender of the person : ")
+                      self.pr=input("Please the enter the selected cloth for the specified gender (for example : shirt,jeans,sleeves and etc) : ")
+                      print("If you want to buy the appliance please enter 'b' or if you want to enter to your cart 'c'")
                       while True:
                         try:
                           choice=input()
@@ -454,18 +455,18 @@ class Medics(Shop):
                         except ValueError:
                           print("Please enter valid input")
                       if choice=='b':
-                        print("If you are buying one piece enter 1 or if you are buying in set enter 2")
+                        print("Please enter the range of the cloth if it is small size enter 's' if it is medium size enter 'm' or large size enter 'l'")
                         while True:
                           try:
-                            range=int(input())
-                            if range==1 or 2:
+                            range=input()
+                            if range=='s' or 'm' or 'l':
                               break
                             else:
                               raise ValueError
                           except ValueError:
                                 print("Please enter valid input")
-                        if range==1:
-                          self.rand=r.randint(400,699)
+                        if range=='s':
+                          self.rand=r.randint(100,2000)
                           print(f"The cost of the item you want to buy is {self.rand}, If you want to confirm buying it enter y or enter n")
                           while True:
                             try:
@@ -478,14 +479,14 @@ class Medics(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin  : ")
                             rand1=r.randint(1,6)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
                             print("Buying of the item is failed")
-                        else:
-                          self.rand=r.randint(700,1000)
-                          print(f"The cost of the item you want to buy is {self.rand}, If you want to confirm buying it enter y or enter n")
+                        elif range=='m':
+                          self.rand=r.randint(1500,3999)
+                          print(f"The cost of the item you want yto buy is {self.rand}, If you want to confirm buying it enter y or enter n")
                           while True:
                             try:
                               dec=input()
@@ -497,7 +498,26 @@ class Medics(Shop):
                             print("Please enter the card details here : ")
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
-                            self.pin=getpass.getpass("enter the pin number : ")
+                            self.pin=getpass.getpass("enter the pin  : ")
+                            rand1=r.randint(1,8)
+                            print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
+                          else:
+                            print("Buying of the item is failed")
+                        else:
+                          self.rand=r.randint(3500,5000)
+                          print(f"The cost of the item you want yto buy is {self.rand}, If you want to confirm buying it enter y or enter n")
+                          while True:
+                            try:
+                              dec=input()
+                              if dec=='y' or 'n':
+                                break
+                            except ValueError:
+                              print("Invalid. Please enter a valid number")
+                          if dec=='y':
+                            print("Please enter the card details here : ")
+                            self.acc_num=input("Enter the account number : ")
+                            self.cvv=getpass.getpass("Enter the cvv number : ")
+                            self.pin=getpass.getpass("enter the pin  : ")
                             rand1=r.randint(1,10)
                             print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
                           else:
@@ -505,7 +525,7 @@ class Medics(Shop):
                       else:
                         print("The item had added to your cart")
                         self.cart=self.name
-                        print(f"The item which was added is {self.cart}")
+                        print(f"The item which was added is {self.cr} of brand {self.cart}")
 
 s=Shop()
 e=Electronics()
@@ -514,7 +534,7 @@ c=Cosmetics()
 sp=Sports()
 fu=Furniture()
 f=Food()
-m=Medics()
+m=Clothes()
 my_value=s.inpt
 if my_value==1:
   e.Elec()
@@ -527,6 +547,6 @@ elif my_value==4:
 elif my_value==5:
     fu.Fur()
 else:
-    m.Med()
+    m.Clot()
 
 
