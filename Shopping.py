@@ -292,7 +292,7 @@ class Food(Shop):
                           except ValueError:
                                 print("Please enter valid input")
                         if range=='s':
-                          self.rand=r.randint(500,700)
+                          self.rand=r.randint(100,400)
                           print(f"The cost of the item you want to buy is {self.rand}, If you want to confirm buying it enter y or enter n")
                           while True:
                             try:
@@ -306,12 +306,12 @@ class Food(Shop):
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
                             self.pin=getpass.getpass("enter the pin : ")
-                            rand1=r.randint(1,6)
-                            print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
+                            rand1=r.randint(30,40)
+                            print("Order is successfully placed the delivery will arrive in {} minutes".format(rand1))
                           else:
                             print("Buying of the item is failed")
                         elif range=='m':
-                          self.rand=r.randint(700,1000)
+                          self.rand=r.randint(400,700)
                           print(f"The cost of the item you want yto buy is {self.rand}, If you want to confirm buying it enter y or enter n")
                           while True:
                             try:
@@ -325,13 +325,13 @@ class Food(Shop):
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
                             self.pin=getpass.getpass("enter the pin : ")
-                            rand1=r.randint(1,8)
-                            print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
+                            rand1=r.randint(30,40)
+                            print("Order is successfully placed the delivery will arrive in {} minutes".format(rand1))
                           else:
                             print("Buying of the item is failed")
                         else:
-                          self.rand=r.randint(1000,1500)
-                          print(f"The cost of the item you want yto buy is {self.rand}, If you want to confirm buying it enter y or enter n")
+                          self.rand=r.randint(700,9f00)
+                          print(f"The cost of the item you want to buy is {self.rand}, If you want to confirm buying it enter y or enter n")
                           while True:
                             try:
                               dec=input()
@@ -344,8 +344,8 @@ class Food(Shop):
                             self.acc_num=input("Enter the account number : ")
                             self.cvv=getpass.getpass("Enter the cvv number : ")
                             self.pin=getpass.getpass("enter the pin : ")
-                            rand1=r.randint(1,10)
-                            print("Order is successfully placed the delivery will arrive in {} days".format(rand1))
+                            rand1=r.randint(30,40)
+                            print("Order is successfully placed the delivery will arrive in {} minutes".format(rand1))
                           else:
                             print("Buying of the item is failed")
                       else:
@@ -548,5 +548,3 @@ elif my_value==5:
     fu.Fur()
 else:
     m.Clot()
-
-
