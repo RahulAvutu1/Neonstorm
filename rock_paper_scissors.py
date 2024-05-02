@@ -23,7 +23,7 @@ def rock_paper_scissors():
       print("Invalid input. Please enter a number.")
       continue
     except KeyError:
-      print("Invalid. Input enter a valid number.")
+      print("Invalid input. Please enter a valid number.")
       continue
   
     if mydict[ite]=="Scissors" and rand=="Paper":
