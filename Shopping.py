@@ -330,7 +330,7 @@ class Food(Shop):
                           else:
                             print("Buying of the item is failed")
                         else:
-                          self.rand=r.randint(700,9f00)
+                          self.rand=r.randint(700,900)
                           print(f"The cost of the item you want to buy is {self.rand}, If you want to confirm buying it enter y or enter n")
                           while True:
                             try:
