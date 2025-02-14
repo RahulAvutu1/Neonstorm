@@ -18,6 +18,8 @@ def hangman():
        if alpha==choice[i]:
          print("Yes you are correct!")
          continue
+  if alpha=='esc':
+    break
  if i==len(choice)-1:
     print("Congratulation! you are correct.The string is",choice)
 hangman()
