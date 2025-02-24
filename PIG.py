@@ -5,87 +5,91 @@ class PIG:
     def __init__(self):
         self.score1=0
         self.score2=0
-        self.q1=None
-        self.q2=None
-    def roll1(self):
+        self.q=None
+    def roll(self,count,n,p):
         s=0
-        n=int(input('how many times does player 1 wants to roll?'))
-        count=0
-        print('Player 1 turn to roll the dice')
         while True:
             if count==n:
-                print('you rolled the dice {0} times'.format(n))
+                print('you rolled the dice {0} time(s)'.format(n))
                 break
+           
             c=input('Press enter to roll the dice or enter "hold" to hold the score or q to quit')
+            
             if c.lower()=='q':
-                self.q1='q'
+                self.q='q'
                 s=0
                 break
             if c.lower()=='hold':
-                print('player 1 holds the turns')
+                print(f'{p} holds the turns')
                 break
             d=rd.choice(PIG.lis)
             if d==1:
-                print('player 1 rolled a 1 chance lost')
+                print(f'{p} rolled a 1,chance lost')
                 s=0
                 break
-            if self.score1==100:
-                print('player 1 wins')
+            if self.score1==100 or self.score2==100:
+                print(f'{p} wins')
                 break
-            print('player 1 rolled a {0}'.format(d))
+            print('{0} rolled a {1}'.format(p,d))
             s=s+d
             count=count+1
-        if self.q1=='q':
-            print('player 1 quits and player 2 wins')
+        if self.q=='q':
+            if p=='player_1':
+             print(f'{p} quits and player_2 wins')
+            else:
+              print(f'{p} quits and player_1 wins')
             PIG.flag=2
-            return
-        self.score1=self.score1+s
-        print('player 1 score is:')
-        print(self.score1)
-        PIG.flag=1
+            
+        if p=='player_1':
+         self.score1=self.score1+s
+        else: 
+           self.score2=self.score2+s
+        print('Score of  player 1:',self.score1)
+        print('Score of player 2:',self.score2)
+        if self.score1>=100:
+           print(f'{p} wins')
+        elif self.score2>=100:
+           print(f'{p} wins')
+        return
+        
+    def roll1(self):
+        while True:
+          try:
+             n=int(input('how many times does player_1 wants to roll?'))
+             if n<0:
+                 print('Try again')
+                 continue
+             break
+          except ValueError:
+           print('Try again please')
+        count=0
+        self.roll(count,n,'player_1')
+        if PIG.flag==2:
+           return
+        else:
+          PIG.flag=1
     def roll2(self):
-         s=0
-         n=int(input('how many times does player 2 want to roll?'))
-         count=0
-         print('Player 2 turn to roll the dice')
          while True:
-            if count==n:
-                print(f'you rolled the dice {n} times')
-                break
-            c=input('Press enter to roll the dice or enter "hold" to hold the score or q to quit')
-            if c.lower()=='q':
-                self.q2='q'
-                s=0
-                break
-            if c.lower()=='hold':
-                print('player 2 holds the turns')
-                break
-            d=rd.choice(PIG.lis)
-            if d==1:
-                print('player 2 rolled a 1 chance lost')
-                s=0
-                break
-            if self.score2==100:
-                print('player 2 wins')
-                break
-            print('player 2 rolled a {0}'.format(d))
-            s=s+d
-            count=count+1
-         if self.q2=='q':
-            print('player 2 quits and player 1 wins')
-            PIG.flag=2
-            return
-         self.score2=self.score2+s
-         print('player 2 score is:')
-         print(self.score2)
-         PIG.flag=0
+          try:
+             n=int(input('how many times does player_2 wants to roll?'))
+             if n<0:
+                 print('Try again')
+                 continue
+             break
+          except ValueError:
+           print('Try again please')
+         count=0
+         self.roll(count,n,'player_2')
+         if PIG.flag==2:
+          return
+         else:
+            PIG.flag=0
 p=PIG()
 def fun(flag):
     match flag:
         case None:
             p.roll1()
         case 0:
-            
             p.roll1()
         case 1:
             p.roll2()
@@ -111,5 +115,8 @@ def print_pig_rules():
     """)
 print_pig_rules()
 
-while p.score1<100 and p.score2<100 and PIG.flag!=2:
-    fun(PIG.flag)   
+while p.score1<100 and p.score2<100 :
+  if PIG.flag!=2:
+    fun(PIG.flag)  
+  else:
+     break 
